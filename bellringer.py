@@ -4,7 +4,7 @@ def caesar_cipher_encoder(text):
     encoded_text = ""
 
     for char in text: # "char" checks every character
-        if char.isalpha():
+        if char.isalpha(): # this just checks if its in the alphabet 
             char = char.lower()  
             current_index = alphabet.index(char)
             new_index = (current_index + shift) % 26  
