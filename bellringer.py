@@ -4,9 +4,9 @@ def caesar_cipher_encoder(text):
     encoded_text = ""
 
     for char in text: # "char" checks every character
-        if char.isalpha():  # if the character is a letter
+        if char.isalpha():
             char = char.lower()  
-            current_index = alphabet.index(char)  # find pos
+            current_index = alphabet.index(char)
             new_index = (current_index + shift) % 26  
             new_char = alphabet[new_index]  # new_char defines the new index that was shifted by 15 and it is added to the conded text
             encoded_text += new_char
